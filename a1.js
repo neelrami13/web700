@@ -40,8 +40,8 @@ function httpRequest(httpVerb, path) {
 // Step 5: Manually Testing the "httpRequest" Function
 
 console.log(httpRequest("GET", "/")); // 200: Welcome to WEB700 Assignment 1
-console.log(httpRequest("GET", "/about")); // 200: This course name is WEB700. This assignment was prepared by [Your Name]
-console.log(httpRequest("GET", "/contact")); // 200: Your Email [Your Email]
+console.log(httpRequest("GET", "/about")); // 200: This course name is WEB700. This assignment was prepared by Neel Rami
+console.log(httpRequest("GET", "/contact")); // 200: Your Email nhrami@myseneca.ca
 console.log(httpRequest("POST", "/login")); // 200: Hello, User Logged In
 console.log(httpRequest("GET", "/panel")); // 200: Main Panel
 console.log(httpRequest("POST", "/logout")); // 200: Logout Complete. Goodbye
