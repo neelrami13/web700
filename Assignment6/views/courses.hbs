@@ -1,0 +1,30 @@
+{{!-- views/courses.hbs --}}
+<div class="row">
+  <main class="col-md-12">
+    <h2>Courses</h2>
+    <hr />
+    <a href="/courses/add" class="btn btn-success float-right">Add New Course</a>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Description</th>
+          <th>Actions</th>
+          <th></th> <!-- For Remove button -->
+        </tr>
+      </thead>
+      <tbody>
+        {{#each courses}}
+          <tr>
+            <td><a href="/course/{{this.courseId}}">{{this.courseCode}}</a></td>
+            <td><a href="/course/{{this.courseId}}">{{this.courseDescription}}</a></td>
+            <td>
+                <a href="/courses/update/{{this.courseId}}" class="btn btn-warning">Update</a>
+            </td>
+            <td><a href="/course/delete/{{this.courseId}}" class="btn btn-danger">Remove</a></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </main>
+</div>
